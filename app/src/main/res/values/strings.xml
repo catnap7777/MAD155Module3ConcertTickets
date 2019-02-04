@@ -4,6 +4,7 @@
     <string name="txtTitle">Ticket Vault</string>
     <string name="txtTickets">Number of Tickets</string>
     <string name="prompt">Select Group</string>
+    <string name="txtSelectAGroup">Please select a group&#8230;</string>
     <string name="description">Concert Image</string>
     <string name="btnCost">FIND THE COST</string>
 

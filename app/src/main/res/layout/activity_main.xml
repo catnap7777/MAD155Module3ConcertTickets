@@ -11,7 +11,6 @@
         android:layout_width="295dp"
         android:layout_height="74dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:text="@string/txtTitle"
         android:textAlignment="center"
@@ -22,72 +21,92 @@
 
     <EditText
         android:id="@+id/txtTickets"
-        android:layout_width="365dp"
+        android:layout_width="329dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:autofillHints="no"
         android:ems="10"
         android:hint="@string/txtTickets"
         android:inputType="number"
         android:textAlignment="center"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
 
+    <TextView
+        android:id="@+id/txtSelectAGroup"
+        android:layout_width="325dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/txtSelectAGroup"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.631"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTickets" />
+
     <Spinner
         android:id="@+id/txtGroup"
-        android:layout_width="365dp"
-        android:layout_height="71dp"
+        android:layout_width="329dp"
+        android:layout_height="23dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:entries="@array/txtGroup"
         android:prompt="@string/prompt"
         android:spinnerMode="dialog"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTickets" />
+        app:layout_constraintTop_toBottomOf="@+id/txtSelectAGroup" />
 
     <Button
         android:id="@+id/btnCost"
-        android:layout_width="264dp"
-        android:layout_height="wrap_content"
+        android:layout_width="336dp"
+        android:layout_height="65dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:text="@string/btnCost"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtGroup" />
 
     <EditText
         android:id="@+id/txtResult"
-        android:layout_width="365dp"
-        android:layout_height="95dp"
+        android:layout_width="329dp"
+        android:layout_height="59dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="8dp"
+        android:autofillHints="no"
+        android:editable="false"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:textSize="22sp"
+        android:inputType="none"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnCost" />
 
     <ImageView
         android:id="@+id/imgConcert"
-        android:layout_width="365dp"
+        android:layout_width="329dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:adjustViewBounds="true"
         android:contentDescription="@string/description"
+        android:cropToPadding="true"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtResult"
         app:srcCompat="@drawable/concert" />
+
 </android.support.constraint.ConstraintLayout>
