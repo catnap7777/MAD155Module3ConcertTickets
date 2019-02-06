@@ -55,7 +55,6 @@ public class MainActivity extends AppCompatActivity {
                     results.setText("Cost for group - " + groupChoice + " is: " +
                             currency.format(totalCost));
                 }
-
             }
         });
 
